@@ -35,7 +35,7 @@ yes | sudo apt install --no-install-recommends xinit network-manager-gnome light
 feh vlc ristretto screengrab evince
 yes | sudo apt install xserver-xorg i3 i3status rxvt-unicode x11-xserver-utils dmenu libgtk-3-0 xss-lock \
 xarchiver thunar gvfs autofs gvfs-backends thunar-archive-plugin ntfs-3g \
-fcitx5 fcitx5-mozc fonts-ubuntu fonts-noto-cjk fonts-noto-cjk-extra ttf-ancient-fonts-symbola fonts-noto-color-emoji \
+fonts-ubuntu ttf-ancient-fonts-symbola fonts-noto-color-emoji \
 gimp gimp-gmic filezilla thunderbird ffmpegthumbnailer 
 ##Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/google-chrome.deb
@@ -63,7 +63,6 @@ wireplumber{,-doc} gir1.2-wp-0.4 libwireplumber-0.4-{0,dev}
 yes | sudo apt install --no-install-recommends pavucontrol pulseaudio-utils
 
 echo "---change caps to ctrl---"
-sudo cp keyboard /etc/default/keyboard
 sudo systemctl restart console-setup
 
 yes | sudo apt autoremove
